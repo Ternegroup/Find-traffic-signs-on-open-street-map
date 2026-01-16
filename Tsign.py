@@ -6,7 +6,6 @@ nwr(area.searchArea)["amenity"="school"]->.schools;
 // Find traffic signs with Swedish codes and inscriptions referencing time or "Skola"
 (
   node(area.searchArea)["traffic_sign"~"SE:C31|SE:A13"];     // speed limit or children warning
-)->.signs;
- 
+)->.signs; 
 // print results
 out geom;
